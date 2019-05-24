@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            height: 350px;
+            width:300px;
+            display: flex;
+            justify-content: flex-start;
+            background: white;
+            padding-top: 90px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .a1,.a2,.a3{
+            background: rgb(7, 197, 7);
+            height:240px;
+            width:100px;
+            border-radius: 20%;
+            position: relative;
+            z-index: 1;
+        }
+        .a2:before{
+            content: "";
+            background: rgb(7, 197, 7);
+            width: 300px;
+            height:300px;
+            border-radius: 50%;
+            position: absolute;
+            top:-90px;
+            left:-100px;
+        }
+        .trunk{
+            justify-self: center;
+            align-self: auto;
+            background: brown;
+            width: 100px;
+            height: 240px;
+            position: absolute;
+            top:200px;
+            left:100px;
+        }
+        .container:hover .a1,.container:hover .a2,.container:hover .a3,.container:hover .a2::before{
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="trunk"></div>
+    </div>
+</body>
+</html>

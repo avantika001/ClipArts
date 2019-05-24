@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            background:white;
+            height:500px;
+            width:250px;
+            position: relative;
+        }
+        .tree-top{
+            height:150px;
+            width:150px;
+            background: green;
+            border-radius: 50%;
+            position: relative;
+            top:30%;
+            
+        }
+        .tree-top:before{
+            content:'';
+            height:150px;
+            width:150px;
+            background: green;
+            border-radius: 50%;
+            position: absolute;
+            left:30%;
+            top:-80%;
+        }
+        .tree-top:after{
+            content:'';
+            height:150px;
+            width:150px;
+            background:green;
+            border-radius: 50%;
+            position: absolute;
+            left:60%;
+            top:0%;
+            z-index: 1;
+        }
+        .trunk{
+            width: 50px;
+            height:150px;
+            position: absolute;
+            top:55%;
+            left:40%;
+            background: brown;
+            border-top-left-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tree-top"></div>
+        <div class="trunk"></div>
+    </div>
+</body>
+</html>

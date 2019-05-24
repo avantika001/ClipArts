@@ -1,0 +1,123 @@
+html,body{
+    margin:0%;
+    padding: 0%;
+}
+.container-girl{
+    width:600px;
+    height:600px;
+    border-radius: 50%;
+    position: relative;
+    background: transparent;
+    transform: scale(1);
+}
+
+.rachelface{
+    width:300px;
+    height:350px;
+    border-radius:50%;
+    background: #eebb99;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.bow{
+    width: 0px;
+    height: 0px;
+    border:100px solid pink;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 20%;
+    position: absolute;
+    top: -30%;
+    left: 15%;
+    z-index: 2;
+}
+
+.hair{
+    width: 350px;
+    height: 400px;
+    background: black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    position: absolute;
+    left:-5%;
+    z-index: -1;
+}
+.right-side-fringe{
+    width:255px;
+    height:130px;
+    background: black;
+    position: absolute;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    top:-5%;
+    left:7%;
+    z-index:1 ;
+}
+
+.eyes{
+    display: flex;
+    justify-content: space-between;
+    width:170px;
+    height: 100px;
+    position: absolute;
+    top:40%;
+    left:20%;
+}
+
+.eyes > div{
+    width:50px;
+    height:50px;
+    background: black;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.blush{
+    display: flex;
+    justify-content: space-between;
+    width:250px;
+    height: 100px;
+    position: absolute;
+    top:50%;
+    left:7%;
+}
+
+.blush > div{
+    width:75px;
+    height:75px;
+    background:lightcoral;
+    border-radius: 50%;
+}
+
+.nose{
+    width:0px;
+    height:0px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:60%;
+    left:45%;
+    border:10px solid rgb(199, 31, 31);
+    border-top-color: transparent;
+}
+
+.mouth{
+    width:0px;
+    height:0px;
+    background: transparent;
+    border:25px solid white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:70%;
+    left:40%;
+    transform: rotate(45deg)
+}
+
