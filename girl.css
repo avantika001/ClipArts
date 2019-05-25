@@ -64,11 +64,13 @@ html,body{
     display: flex;
     justify-content: space-between;
     width:170px;
-    height: 100px;
+    height: 50px;
     position: absolute;
     top:40%;
     left:20%;
+    overflow: hidden;
 }
+
 
 .eyes > div{
     width:50px;
@@ -76,7 +78,24 @@ html,body{
     background: black;
     z-index: 1;
     border-radius: 50%;
+    animation: blink 2s ease-out 0s infinite;
 }
+
+@keyframes blink{
+    0%,48%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1,0);
+    }
+    51%,100%{
+        transform: scale(1,1);
+    }
+}
+
+
+
+
 
 .blush{
     display: flex;
